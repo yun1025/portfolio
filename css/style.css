@@ -6,7 +6,7 @@ a:hover { text-decoration: none; color: #333;}
 a:focus { text-decoration: none; color: #fa465c;}
 
 html, body { height: 100%;}
-.wrap { max-width: 1200px; margin: auto; color: #333;}
+.wrap { max-width: 1220px; margin: auto; padding: 0 10px; color: #333;}
 .title { color: #f91d37; font-size: 40px; margin: 100px 0 50px; text-align: center; text-transform: uppercase;}
 .color-white { color: #fff;}
 
@@ -28,7 +28,10 @@ html, body { height: 100%;}
 	
 	#intro > .intro_click { width: 31px; margin: auto; font-size: 13px; cursor: pointer;}
 		#intro > .intro_click img { margin-top: 5px;}
-		
+	
+@media screen and (max-width: 768px) {
+	
+}
 		
 /* header */
 header { border-bottom: 1px solid #ccc;}
@@ -37,12 +40,13 @@ header:after { content: ""; display: block; clear: both;}
 	header h1 { float: left; font-size: 25px; margin: 15px 0;}
 	
 	header nav { float: right;}
-		header ul { font-size: 18px; font-weight: bold; margin-top: 15px;}
+		header ul { font-size: 18px; font-weight: bold; margin-top: 19px;}
 		header ul > li { float: left; margin-right: 40px;}
 		header ul > li:last-child { margin-right: 0;}
 			header ul > li a{ color: #666;}
 			header ul > li:hover a { color: #fa465c;}
-	
+
+
 	
 /* about_me */
 #about_me { font-size: 16px; line-height: 24px; word-break: keep-all;}
@@ -57,7 +61,13 @@ header:after { content: ""; display: block; clear: both;}
 	#about_me .button_zone { text-align: right;}
 		#about_me .button_zone button { background: #fff; border: 1px solid #f91d37; color: #f91d37; padding: 10px 28px 12px; font-size: 14px; font-weight: bold; cursor: pointer;}
 			#about_me .button_zone button img { margin-left: 10px;}
-			
+	
+
+@media screen and (max-width: 768px) {
+	#about_me .about_img { float: left; width: 100%; padding: 0 25%; margin-right: 0;}
+	#about_me .about_text { float: left; width: 100%; text-align: center;}
+	#about_me .button_zone { text-align: center; padding-top: 20px;}
+}	
 			
 /* skill */
 #skill { background: url('../images/skill_back.png') no-repeat; background-size: 100% 100%; padding-bottom: 60px; margin-top: 100px; font-size: 18px; overflow: hidden;}
@@ -73,6 +83,18 @@ header:after { content: ""; display: block; clear: both;}
 	#skill ul li:nth-child(4) .stick { width: 60%;}
 	#skill ul li:nth-child(5) .stick { width: 75%;}
 	#skill ul li:nth-child(6) .stick { width: 70%;}
+	
+@media screen and (max-width: 768px) {
+	#skill ul li p { width: 100%; text-align: left; padding-left: 10px;}
+	
+	#skill ul li .stick { margin: 0 10px;}
+	#skill ul li:nth-child(1) .stick { width: 85%;}
+	#skill ul li:nth-child(2) .stick { width: 75%;}
+	#skill ul li:nth-child(3) .stick { width: 80%;}
+	#skill ul li:nth-child(4) .stick { width: 70%;}
+	#skill ul li:nth-child(5) .stick { width: 85%;}
+	#skill ul li:nth-child(6) .stick { width: 80%;}
+}
 
 
 /* portfolio */
@@ -82,7 +104,7 @@ header:after { content: ""; display: block; clear: both;}
 	.port_category:after { content: ""; display: block; clear: both;}
 		
 		.port_category ul { width: 330px; margin: auto; text-align: center;}
-			.port_category ul li { float: left; margin: 0 20px; font-size: 18px; color: #666;}
+			.port_category ul li { float: left; margin: 0 20px; font-size: 18px; color: #666; cursor: pointer;}
 			.port_category ul li.active { font-weight: bold; color: #fb697a; padding: 0 3px 5px; border-bottom: 2px solid #fb697a;}
 			
 		#portfolio .port_list > li { float: left; width: 31.5%; margin: 0 10px 20px; box-sizing: border-box; border: 1px solid #ccc; box-sizing: border-box; overflow: hidden;}
@@ -93,6 +115,10 @@ header:after { content: ""; display: block; clear: both;}
 			#portfolio .port_list > li > ul { font-size: 14px; padding: 10px 15px 15px; min-height: 126px; box-sizing: border-box; background: #fff; position: relative; z-index: 10;}
 				#portfolio .port_list > li ul > li { padding-bottom: 5px;}
 				#portfolio .port_list > li ul > li h4 { font-size: 18px; padding-bottom: 8px;}
+
+@media screen and (max-width: 768px) {
+	#portfolio .port_list > li { width: 47%;}
+}
 
 
 /* career */
@@ -113,14 +139,27 @@ header:after { content: ""; display: block; clear: both;}
 	#career h4, #career p, #career strong { color: #fff;}
 	#career .year { font-size: 15px; font-weight: bold; color: #f91d37;}
 	#career h4 { font-size: 20px; margin-bottom: 15px;}
-#career p { line-height: 22px;}
+	#career p { line-height: 22px;}
+	
+@media screen and (max-width: 768px) {
+	#career div { width: 42%;}
+	
+	#career .career_left { left: 4%;}
+	#career .career_right { right: 1%;}
+		
+	#career div:nth-child(2) { top: 17.5%;}
+	#career div:nth-child(3) { top: 31%;}
+	#career div:nth-child(4) { top: 44%;}
+	#career div:nth-child(5) { top: 57%;}
+	#career div:nth-child(6) { top: 74.2%;}
+}
 
 
 /* contact */
 #contact { text-align: center; padding-bottom: 100px;}
 #contact:after { content: ""; display: block; clear: both;}
 
-	#contact h3 { font-size: 28px; margin: 100px 0 50px; font-weight: normal;}
+	#contact h3 { font-size: 28px; margin: 100px 0 50px; font-weight: normal; word-break: keep-all;}
 	#contact h3 strong { color: #f91d37;}
 
 	.sns_list { max-width: 50%; margin: auto;}
