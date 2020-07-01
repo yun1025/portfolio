@@ -6,7 +6,7 @@ a:hover { text-decoration: none; color: #333;}
 a:focus { text-decoration: none; color: #fa465c;}
 
 html, body { height: 100%;}
-.wrap { max-width: 1220px; margin: auto; padding: 0 10px; color: #333;}
+.wrap { max-width: 1200px; margin: auto; padding: 0 10px; color: #333;}
 .title { color: #f91d37; font-size: 40px; margin: 100px 0 50px; text-align: center; text-transform: uppercase;}
 .color-white { color: #fff;}
 
@@ -15,9 +15,9 @@ html, body { height: 100%;}
 /* intro */
 #intro { background: url('../images/intro_back.png') no-repeat; background-size: 100% 100%; height: 100%; color: #fff; text-align: center; overflow: hidden;}
 	
-	#intro > h2 { margin-top: 13%; font-size: 46px; font-family: "나눔스퀘어라운드"; letter-spacing: 2px;}
+	#intro > h2 { margin-top: 17%; font-size: 46px; font-family: "나눔스퀘어라운드"; letter-spacing: 2px;}
 	
-	#intro > ul { font-size: 22px; font-family: "나눔스퀘어라운드"; position: relative; max-width: 700px; margin: 4% auto 0;}
+	#intro > ul { font-size: 22px; font-family: "나눔스퀘어라운드"; position: relative; max-width: 700px; margin: 5% auto 0;}
 		#intro > ul li { margin-bottom: 18px;}
 
 		.intro_left, .intro_right { position: absolute; top: -7%;}
@@ -28,10 +28,34 @@ html, body { height: 100%;}
 	
 	#intro > .intro_click { width: 31px; margin: auto; font-size: 13px; cursor: pointer;}
 		#intro > .intro_click img { margin-top: 5px;}
-	
+
+@media screen and (max-width: 1200px) {
+	#intro > h2 { margin-top: 22%;}
+}	
+
+@media screen and (max-width: 992px) {
+	#intro > h2 { margin-top: 32%;}
+}
+
 @media screen and (max-width: 768px) {
+	#intro > h2 { margin-top: 38%; font-size: 40px;}
+	
+	#intro > ul { font-size: 18px; max-width: 90%; margin: 7% auto 0;}
+		.intro_left img, .intro_right img { width: 86%;}
+		
+	#intro > h4 { margin-top: 12%;}
+}
+
+@media screen and (max-width: 590px) {
+	#intro > h2 { margin-top: 42%; font-size: 34px;}
+	
+	#intro > ul { font-size: 15px; max-width: 90%; margin: 9% auto 0;}
+		#intro > ul li {}
+	
+		.intro_left img, .intro_right img { width: 77%;}
 	
 }
+
 		
 /* header */
 header { border-bottom: 1px solid #ccc;}
@@ -45,6 +69,11 @@ header:after { content: ""; display: block; clear: both;}
 		header ul > li:last-child { margin-right: 0;}
 			header ul > li a{ color: #666;}
 			header ul > li:hover a { color: #fa465c;}
+			
+@media screen and (max-width: 768px) {
+	header ul { font-size: 16px; margin-top: 22px;}
+		header ul > li {}
+}	
 
 
 	
@@ -55,7 +84,7 @@ header:after { content: ""; display: block; clear: both;}
 	#about_me .about_img { float: left; width: 44%; text-align: right; padding-left: 8%; margin-right: 8%; box-sizing: border-box;}
 	#about_me .about_text { float: left; width: 48%; word-break: keep-all;}
 
-	#about_me h3 { font-size: 25px; color: #fb697a; margin-bottom: 10px;}	
+	#about_me h3 { font-size: 25px; color: #fb697a; margin-bottom: 10px; text-transform: uppercase;} 
 	#about_me p { margin-bottom: 30px;}
 	
 	#about_me .button_zone { text-align: right;}
@@ -83,6 +112,12 @@ header:after { content: ""; display: block; clear: both;}
 	#skill ul li:nth-child(4) .stick { width: 60%;}
 	#skill ul li:nth-child(5) .stick { width: 75%;}
 	#skill ul li:nth-child(6) .stick { width: 70%;}
+
+@media screen and (max-width: 954px) {
+	#skill ul li p { width: 110px;}
+	#skill ul li .stick { margin: 0 10px 0 20px;}
+}
+
 	
 @media screen and (max-width: 768px) {
 	#skill ul li p { width: 100%; text-align: left; padding-left: 10px;}
@@ -114,10 +149,20 @@ header:after { content: ""; display: block; clear: both;}
 		
 			#portfolio .port_list > li > ul { font-size: 14px; padding: 10px 15px 15px; min-height: 126px; box-sizing: border-box; background: #fff; position: relative; z-index: 10;}
 				#portfolio .port_list > li ul > li { padding-bottom: 5px;}
-				#portfolio .port_list > li ul > li h4 { font-size: 18px; padding-bottom: 8px;}
+				#portfolio .port_list > li ul > li h4 { font-size: 18px; padding-bottom: 10px;}
 
-@media screen and (max-width: 768px) {
-	#portfolio .port_list > li { width: 47%;}
+@media screen and (max-width: 1152px) {
+	#portfolio .port_list > li { width: 31%;}
+	
+		#portfolio .port_list > li > ul { min-height: 151px;}
+}
+
+@media screen and (max-width: 894px) {
+	#portfolio .port_list > li { width: 46%; margin: 0 2% 20px;}
+}
+
+@media screen and (max-width: 538px) {
+	#portfolio .port_list > li { width: 100%; margin: 0 0 40px;}
 }
 
 
@@ -125,10 +170,9 @@ header:after { content: ""; display: block; clear: both;}
 #career { background: url('../images/career_back.png') no-repeat; background-size: 100% 100%; min-height: 1184px; margin-top: 100px; overflow: hidden; position: relative;}
 #career:after { content: ""; display: block; clear: both;}
 
-	#career div { width: 452px; word-break: keep-all; position: absolute;}
-		#career .career_left { left: 24%; text-align: right;}
-		#career .career_right { right: 23%;}
-		#career .career_icon { left: 50%; top: 20%;}
+	#career div { max-width: 452px; word-break: keep-all; position: absolute;}
+		#career .career_left { right: 54%; text-align: right;}
+		#career .career_right { left: 56%;}
 		
 		#career div:nth-child(2) { top: 17%;}
 		#career div:nth-child(3) { top: 31%;}
@@ -136,22 +180,40 @@ header:after { content: ""; display: block; clear: both;}
 		#career div:nth-child(5) { top: 57.8%;}
 		#career div:nth-child(6) { top: 75%;}
 
-	#career h4, #career p, #career strong { color: #fff;}
-	#career .year { font-size: 15px; font-weight: bold; color: #f91d37;}
-	#career h4 { font-size: 20px; margin-bottom: 15px;}
-	#career p { line-height: 22px;}
-	
-@media screen and (max-width: 768px) {
-	#career div { width: 42%;}
-	
-	#career .career_left { left: 4%;}
-	#career .career_right { right: 1%;}
+		#career h4, #career p, #career strong { color: #fff;}
+		#career .year { font-size: 15px; font-weight: bold; color: #f91d37;}
+		#career h4 { font-size: 20px; margin-bottom: 15px;}
+		#career p { line-height: 22px;}
 		
-	#career div:nth-child(2) { top: 17.5%;}
-	#career div:nth-child(3) { top: 31%;}
-	#career div:nth-child(4) { top: 44%;}
-	#career div:nth-child(5) { top: 57%;}
-	#career div:nth-child(6) { top: 74.2%;}
+		/* 연도 막대 */
+		#career .career_icon { left: 50.8%; top: 20%;}
+			#career .career_icon p { width: 2px; min-height: 840px; background: #fff;}
+			#career .career_icon span { position: absolute; left: -9px; width: 20px; height: 20px; background: #fff; border-radius: 50%;}
+			
+			#career .career_icon span:nth-child(2) { top: -1%;}
+			#career .career_icon span:nth-child(3) { top: 18.7%;}
+			#career .career_icon span:nth-child(4) { top: 38%;}
+			#career .career_icon span:nth-child(5) { top: 56.5%;}
+			#career .career_icon span:nth-child(6) { top: 81%;}
+		
+@media screen and (max-width: 768px) {
+	#career div { position: inherit; width: 95%; max-width: 93%; margin-bottom: 60px;}
+	
+	#career .career_left { float: right; text-align: left;}
+	#career .career_right { float: right;}
+	
+	#career p:last-child { min-height: 90px;}
+	
+	/* 연도 막대 */
+	#career .career_icon { width: 24px; margin-top: 80px; margin-left: 10px;}
+		#career .career_icon p { min-height: 1000px;}
+		#career .career_icon span { left: 10px;}
+		
+		#career .career_icon span:nth-child(2) { top: 18%;}
+			#career .career_icon span:nth-child(3) { top: 34.4%;}
+			#career .career_icon span:nth-child(4) { top: 50.6%;}
+			#career .career_icon span:nth-child(5) { top: 65.3%;}
+			#career .career_icon span:nth-child(6) { top: 80%;}
 }
 
 
@@ -166,6 +228,9 @@ header:after { content: ""; display: block; clear: both;}
 		.sns_list li { float: left; width: 50%; font-size: 16px;}
 		.sns_list li h4 { font-size: 22px; margin: 10px 0 3px;}
 
+@media screen and (max-width: 768px) {	
+	.sns_list { max-width: 80%;}
+}
 
 /* footer */
 footer { background: #333; text-align: center; overflow: hidden;}
@@ -178,3 +243,17 @@ footer:after { content: ""; display: block; clear: both;}
 		.f_menu li a { display: inline-block; padding: 0 30px; color: #999;}
 	
 	footer p { clear: left; width: 100%; padding: 10px 0; margin-top: 40px; background: #222; color: #fff; font-size: 12px;}
+	
+@media screen and (max-width: 768px) {
+	.f_menu { max-width: 440px;}
+		.f_menu li a { padding: 0 15px;}
+}
+
+@media screen and (max-width: 500px) {
+	footer h2 { margin: 40px 0 30px;}
+	
+	.f_menu li { width: 33%;}
+		.f_menu li a { padding: 0 15px 25px;}
+		
+	footer p { margin-top: 20px;}
+}
