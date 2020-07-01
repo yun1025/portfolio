@@ -145,7 +145,7 @@ header:after { content: ""; display: block; clear: both;}
 		#portfolio .port_list > li { float: left; width: 31.5%; margin: 0 10px 20px; box-sizing: border-box; border: 1px solid #ccc; box-sizing: border-box; overflow: hidden;}
 		#portfolio .port_list > li img { transform: scale(1.0); transition: transform 1s;}
 		#portfolio .port_list > li:hover img { transform: scale(1.2);}
-		#portfolio .port_list > li:hover a { color: #f91d37;}
+		#portfolio .port_list > .active a { color: #f91d37;}
 		
 			#portfolio .port_list > li > ul { font-size: 14px; padding: 10px 15px 15px; min-height: 126px; box-sizing: border-box; background: #fff; position: relative; z-index: 10;}
 				#portfolio .port_list > li ul > li { padding-bottom: 5px;}
