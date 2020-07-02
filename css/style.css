@@ -82,13 +82,14 @@ header:after { content: ""; display: block; clear: both;}
 	
 	.pc_menu { float: right;}
 		.pc_menu ul { font-size: 18px; font-weight: bold; margin-top: 19px;}
-		.pc_menu ul > li { float: left; margin-right: 40px;}
+		.pc_menu ul > li { float: left; margin-right: 40px; color: #666; cursor: pointer;}
 		.pc_menu ul > li:last-child { margin-right: 0;}
-			.pc_menu ul > li a{ color: #666;}
-			.pc_menu ul > li:hover a { color: #fa465c;}
+			.pc_menu ul > li:hover { color: #fa465c;}
+
+header.float { position: fixed; top: 0; width: 100%; background: #fff; z-index: 99;}
 			
 @media screen and (max-width: 768px) {
-	header { padding: 0 10px;}
+	header { padding: 0 10px; box-sizing: border-box;}
 		
 		header h1 { font-size: 32px;}
 		
@@ -305,26 +306,23 @@ footer:after { content: ""; display: block; clear: both;}
 	
 	.f_menu { max-width: 590px; margin: auto; font-size: 14px;}
 	.f_menu:after { content: ""; display: block; clear: both;}
-		.f_menu li { float: left;}
-		.f_menu li a { display: inline-block; padding: 0 30px; color: #999;}
+		.f_menu li { float: left; padding: 0 30px; color: #999; cursor: pointer;}
 	
 	footer p { clear: left; width: 100%; padding: 10px 0; margin-top: 40px; background: #222; color: #fff; font-size: 12px;}
 	
 @media screen and (max-width: 768px) {
 	.f_menu { max-width: 440px;}
-		.f_menu li a { padding: 0 15px;}
+		.f_menu li { padding: 0 15px;}
 }
 
 @media screen and (max-width: 500px) {
 	footer h2 { margin: 40px 0 30px;}
 	
-	.f_menu li { width: 33%;}
-		.f_menu li a { padding: 0 15px 25px;}
+	.f_menu li { width: 33%; padding: 0 15px 25px;}
 		
 	footer p { margin-top: 20px;}
 }
 
 @media screen and (max-width: 330px) {
-	.f_menu li { width: 100%;}
-		.f_menu li a { padding: 0 0 20px;}
+	.f_menu li { width: 100%; padding: 0 0 20px;}
 }
