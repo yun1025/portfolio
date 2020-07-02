@@ -218,7 +218,7 @@ header:after { content: ""; display: block; clear: both;}
 		#career h4, #career p, #career strong { color: #fff;}
 		#career .year { font-size: 15px; font-weight: bold; color: #f91d37;}
 		#career h4 { font-size: 20px; margin-bottom: 15px;}
-		#career p { line-height: 22px;}
+		#career p { line-height: 22px; color: #ddd;}
 		
 		/* 연도 막대 */
 		#career .career_icon { left: 50.8%; top: 20%;}
