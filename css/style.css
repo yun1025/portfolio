@@ -158,7 +158,7 @@ header.float { position: fixed; top: 0; width: 100%; background: #fff; z-index: 
 			.port_category ul li { float: left; margin: 0 20px; font-size: 18px; color: #666; cursor: pointer;}
 			.port_category ul li.active { font-weight: bold; color: #fb697a; padding: 0 3px 5px; border-bottom: 2px solid #fb697a;}
 			
-		#portfolio .port_list > li { float: left; width: 31%; margin: 0 1% 20px; border: 1px solid #ccc; overflow: hidden;}
+		#portfolio .port_list > li { float: left; width: 31%; margin: 0 1% 20px; border: 1px solid #ccc; overflow: hidden; position: relative;}
 			#portfolio .port_list > li img { transform: scale(1.0); transition: transform 1s;}
 			
 			#portfolio .port_list > li a { word-break: break-all;}
@@ -166,26 +166,32 @@ header.float { position: fixed; top: 0; width: 100%; background: #fff; z-index: 
 			
 			#portfolio .port_list > li:hover img { transform: scale(1.2);}
 			#portfolio .port_list > li:hover h4 { color: #f91d37;}
-		
-			#portfolio .port_list > li > ul { min-height: 156px; font-size: 14px; padding: 10px 15px 15px; box-sizing: border-box; background: #fff; position: relative; z-index: 10;}
+			
+			
+			/* 제목 & 설명 */
+			#portfolio .port_list > li > ul { font-size: 14px; padding: 10px 15px 15px; box-sizing: border-box; background: #fff; position: relative; z-index: 10;}
 				#portfolio .port_list > li ul > li { padding-bottom: 5px;}
+				
 					#portfolio .port_list > li ul > li h4 { font-size: 18px; padding-bottom: 10px;}
+			
+			/* 버튼 */
+			#portfolio .port_list > li:hover .hover { opacity: 1; transition: 0.2s ease-in;}		
+			#portfolio .port_list .hover { position: absolute; top: 0; width: 100%; height: 80%; background: rgba(0, 0, 0, 0.8); text-align: center; padding-top: 40%; box-sizing: border-box; opacity: 0; transition: opacity 0.3s ease-out;}
+				#portfolio .port_list .hover input{ border-radius: 20px 20px;}
+				#portfolio .port_list .hover input:first-child { margin-bottom: 30px;}
+			
 				
 @media screen and (max-width: 1045px) {
-	#portfolio .port_list > li > ul { min-height: 174px;}
+	#portfolio .port_list > li > ul { min-height: 151px;}
 }		
 
-@media screen and (max-width: 982px) {
-	#portfolio .port_list > li > ul { min-height: 192px;}
+@media screen and (max-width: 772px) {
+	#portfolio .port_list > li > ul { min-height: 169px;}
 }	
 
 @media screen and (max-width: 768px) {
 	#portfolio .port_list > li { width: 47%;}
-	#portfolio .port_list > li > ul { min-height: 174px;}
-}
-
-@media screen and (max-width: 660px) {
-	#portfolio .port_list > li > ul { min-height: 192px;}
+	#portfolio .port_list > li > ul { min-height: 151px;}
 }
 
 @media screen and (max-width: 590px) {
