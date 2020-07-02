@@ -13,6 +13,8 @@ a:focus { text-decoration: none; color: #fa465c;}
 
 .wrap { max-width: 1200px; margin: auto; padding: 0 10px; color: #333;}
 
+.hidden { font-size: 0;}
+
 /* 메뉴 제목 */
 .title { color: #f91d37; font-size: 40px; margin: 100px 0 50px; text-align: center; text-transform: uppercase;}
 .color-white { color: #fff;}
