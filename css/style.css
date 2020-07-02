@@ -238,7 +238,7 @@ header.float { position: fixed; top: 0; width: 100%; background: #fff; z-index: 
 }
 		
 @media screen and (max-width: 768px) {
-	#career div { position: inherit; max-width: 93%; margin-bottom: 60px;}
+	#career div { position: inherit; width: 93%; max-width: 93%; margin-bottom: 60px;}
 	
 	#career .career_left { float: right; text-align: left;}
 	#career .career_right { float: right;}
