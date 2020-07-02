@@ -22,6 +22,17 @@ $(function() {
 	});	
 	
 	
+	//상단 메뉴 클릭 시 슬라이드 닫힘
+	$(".pc_menu ul > li").click(function() {
+		slide_menu();
+	});
+	
+	//포트폴리오 카테고리 클릭 효과
+	$(".port_category ul li").click(function() {
+		$(".port_category ul li").removeClass("active");
+		$(this).addClass("active");
+	});
+	
 	//반응형
 	$(window).resize(function() {
 		//메뉴 슬라이드
@@ -35,8 +46,6 @@ $(function() {
 
 //메뉴 스크롤 이동
 function menu_scroll(name) {
-	slide_menu();
-	
 	var offset = $("#" + name).offset();
 	
 	$("html").animate({scrollTop: offset.top}, 400);
@@ -52,5 +61,16 @@ function slide_menu() {
 		}else {
 			$(".pc_menu").removeClass("on").slideUp();
 		}
+	}
+}
+
+//포트폴리오 필터링
+function portfolio(type) {
+	if(type != "all") {
+		$(".port_list > li").filter(':not([class*='+type+'])').fadeOut('slow');
+		$(".port_list > li").filter('[class*='+type+']').fadeIn('slow');
+		
+	}else {
+		$(".port_list > li").fadeIn('slow');		 
 	}
 }

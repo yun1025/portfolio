@@ -158,27 +158,41 @@ header.float { position: fixed; top: 0; width: 100%; background: #fff; z-index: 
 			.port_category ul li { float: left; margin: 0 20px; font-size: 18px; color: #666; cursor: pointer;}
 			.port_category ul li.active { font-weight: bold; color: #fb697a; padding: 0 3px 5px; border-bottom: 2px solid #fb697a;}
 			
-		/*#portfolio .port_list > li { float: left; width: 31.5%; margin: 0 10px 20px; box-sizing: border-box; border: 1px solid #ccc; box-sizing: border-box;}*/
-		#portfolio .port_list { column-count: 3; column-grp: 10px;}
-		#portfolio .port_list > li { display: inline-block; border: 1px solid #ccc; margin-bottom: 15px; overflow: hidden;}
+		#portfolio .port_list > li { float: left; width: 31%; margin: 0 1% 20px; border: 1px solid #ccc; overflow: hidden;}
 			#portfolio .port_list > li img { transform: scale(1.0); transition: transform 1s;}
+			
 			#portfolio .port_list > li a { word-break: break-all;}
+			#portfolio .port_list > li a:hover { color: #f91d37;}
+			
 			#portfolio .port_list > li:hover img { transform: scale(1.2);}
-			#portfolio .port_list > .active h4 { color: #f91d37;}
+			#portfolio .port_list > li:hover h4 { color: #f91d37;}
 		
-			#portfolio .port_list > li > ul { font-size: 14px; padding: 10px 15px 15px; box-sizing: border-box; background: #fff; position: relative; z-index: 10;}
+			#portfolio .port_list > li > ul { min-height: 156px; font-size: 14px; padding: 10px 15px 15px; box-sizing: border-box; background: #fff; position: relative; z-index: 10;}
 				#portfolio .port_list > li ul > li { padding-bottom: 5px;}
 					#portfolio .port_list > li ul > li h4 { font-size: 18px; padding-bottom: 10px;}
 				
-@media screen and (max-width: 768px) {
-	#portfolio .port_list { column-count: 2;}
+@media screen and (max-width: 1045px) {
+	#portfolio .port_list > li > ul { min-height: 174px;}
 }		
-		
+
+@media screen and (max-width: 982px) {
+	#portfolio .port_list > li > ul { min-height: 192px;}
+}	
+
+@media screen and (max-width: 768px) {
+	#portfolio .port_list > li { width: 47%;}
+	#portfolio .port_list > li > ul { min-height: 174px;}
+}
+
+@media screen and (max-width: 660px) {
+	#portfolio .port_list > li > ul { min-height: 192px;}
+}
+
 @media screen and (max-width: 590px) {
-	#portfolio .port_list { column-count: 1;}
-		#portfolio .port_list > li { width: 100%;}
+	#portfolio .port_list > li { width: 100%;}
+		#portfolio .port_list > li a { color: #f91d37;}
 		
-			#portfolio .port_list > li a { color: #f91d37;}
+		#portfolio .port_list > li > ul { min-height: 156px;}
 }
 
 
