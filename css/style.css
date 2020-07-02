@@ -115,13 +115,13 @@ header:after { content: ""; display: block; clear: both;}
 	
 
 @media screen and (max-width: 768px) {
-	#about_me .about_img { width: 100%; padding: 0 25%; margin-right: 0;}
+	#about_me .about_img { width: 100%; padding: 0 20%; margin-right: 0;}
 	#about_me .about_text { width: 100%; text-align: center;}
 	#about_me .button_zone { text-align: center; padding-top: 20px;}
 }	
 
 @media screen and (max-width: 500px) {
-	#about_me .about_img { padding: 0 15%;}
+	#about_me .about_img { padding: 0 12%;}
 }
 			
 /* skill */
