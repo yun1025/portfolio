@@ -2,16 +2,16 @@
 /* intro */
 #intro { background: url('../images/intro_back.png') no-repeat; background-size: 100% 100%; height: 100%; color: #fff; text-align: center; overflow: hidden;}
 	
-	#intro > h2 { position: relative; width: 100%; top: 28%; margin: auto; font-size: 46px; font-family: "나눔스퀘어라운드"; letter-spacing: 2px;}
+	#intro > h2 { position: relative; width: 100%; top: 36%; margin: auto; font-size: 46px; font-family: "나눔스퀘어라운드"; letter-spacing: 2px;}
 	
 	#intro > ul { position: relative; width: 100%; max-width: 700px; top: 35%; margin: auto; font-size: 22px; font-family: "나눔스퀘어라운드";}
-		#intro > ul li { margin-bottom: 18px;}
+		#intro > ul li { margin-bottom: 18px; opacity: 0;}
 
 		.intro_left, .intro_right { position: absolute; top: -7%;}
-		.intro_left { left: 0;}
-		.intro_right { right: 0;}
+		.intro_left { left: 45%;}
+		.intro_right { right: 45%;}
 		
-	.intro_click { position: relative; width: 160px; top: 44%; margin: auto; font-size: 13px; cursor: pointer;}
+	.intro_click { position: relative; width: 160px; top: 44%; margin: auto; font-size: 13px; cursor: pointer; opacity: 0;}
 		.intro_click h4 { font-family: "나눔손글씨 펜"; font-size: 34px; font-weight: normal;}
 		.intro_click img { -webkit-animation: img 1.0s linear infinite;}
 		
@@ -52,16 +52,16 @@
 }
 
 @media screen and (max-width: 550px) {
-	#intro > h2 { width: 60%; top: 12%; font-size: 34px;}
+	#intro > h2 { font-size: 34px;}
 		
 	#intro > ul { width: 60%; top: 17%; font-size: 16px;}
 		#intro > ul li { margin-bottom: 20px;}
 		
-		.intro_click { top: 24%;}
+		.intro_click { top: 22%;}
 }
 
 @media screen and (max-width: 360px) {
-	#intro > h2 { top: 10%; font-size: 30px;}
+	#intro > h2 { font-size: 30px;}
 		
 	#intro > ul { top: 14%;}
 		#intro > ul li { margin-bottom: 18px;}
@@ -69,7 +69,7 @@
 		.intro_click { top: 18%;}
 			.intro_click h4 { font-size: 28px;}
 }
-	
+
 
 		
 /* header */

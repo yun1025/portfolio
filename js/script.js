@@ -1,4 +1,30 @@
-$(function() {
+$(function() {	
+	//인트로 타이틀 위치값
+	var intro_title = 0;
+	
+	if($(window).width() > 550) {			//모바일 이상
+		intro_title = $("#intro > h2").css("top").replace("px", "") * 0.8;
+	}else (									//모바일
+		intro_title = $("#intro > h2").css("top").replace("px", "") * 0.35
+	)
+	
+	//인트로 애니메이션
+	$("#intro > h2").animate({"top" : intro_title + "px"}, 600, function() {
+		$("#intro .intro_left, #intro .intro_right").animate({"opacity" : "1"}, 400, function() {
+			$("#intro .intro_left").animate({"left" : "0"}, 500);
+			$("#intro .intro_right").animate({"right" : "0"}, 500, function() {
+				$("#intro > ul li:nth-child(1)").animate({"opacity" : "1"}, 400);
+				$("#intro > ul li:nth-child(2)").animate({"opacity" : "1"}, 1200);
+				$("#intro > ul li:nth-child(3)").animate({"opacity" : "1"}, 1800);
+				$("#intro > ul li:nth-child(4)").animate({"opacity" : "1"}, 2400);
+				$("#intro > ul li:nth-child(5)").animate({"opacity" : "1"}, 3000, function() {
+					$(".intro_click").animate({"opacity" : "1"}, 400);
+				});
+			});
+		});
+	});
+	
+	
 	//메뉴 상단 고정
 	var menu = $("header").offset();
 	var skill = $("#skill").offset();
@@ -9,7 +35,7 @@ $(function() {
 		}else {
 			$("header").removeClass("float");
 		}
-		
+
 		//skill 애니메이션
 		if($(document).scrollTop() > (skill.top - 700)) {
 			$("#skill ul li:nth-child(1) .stick").animate({width : "75%"}, 1000)
@@ -36,10 +62,17 @@ $(function() {
 	//반응형
 	$(window).resize(function() {
 		//메뉴 슬라이드
-		if($(document).width() > 751) {		//모바일 사이즈가 아닐 때
+		if($(window).width() > 751) {		//모바일 이상
 			$(".pc_menu").removeClass("on").show();
-		}else (
+		}else (								//모바일
 			$(".pc_menu").removeClass("on").hide()
+		)
+		
+		//인트로 타이틀 위치값
+		if($(window).width() > 550) {			//모바일 이상
+			$("#intro > h2").css("top", $(window).height() * 0.3)
+		}else (									//모바일
+			$("#intro > h2").css("top", $(window).width() * 0.25)
 		)
 	});
 });
