@@ -112,17 +112,18 @@ header:after { content: ""; display: block; clear: both;}
 	#about_me .button_zone { text-align: right;}
 		#about_me .button_zone button { background: #fff; border: 1px solid #f91d37; color: #f91d37; padding: 10px 28px 12px; font-size: 14px; font-weight: bold; cursor: pointer;}
 			#about_me .button_zone button img { margin-left: 10px;}
-	
+
+@media screen and (max-width: 1024px) {
+	#about_me .about_img { width: 40%; padding-left: 0; margin-right: 5%;}
+	#about_me .about_text { width: 55%;}
+}	
 
 @media screen and (max-width: 768px) {
-	#about_me .about_img { width: 100%; padding: 0 20%; margin-right: 0;}
+	#about_me .about_img { width: 100%; padding: 0 15%; margin-right: 0;}
 	#about_me .about_text { width: 100%; text-align: center;}
 	#about_me .button_zone { text-align: center; padding-top: 20px;}
 }	
 
-@media screen and (max-width: 500px) {
-	#about_me .about_img { padding: 0 12%;}
-}
 			
 /* skill */
 #skill { background: url('../images/skill_back.png') no-repeat; background-size: 100% 100%; padding-bottom: 60px; margin-top: 100px; font-size: 18px; overflow: hidden;}
@@ -177,27 +178,27 @@ header:after { content: ""; display: block; clear: both;}
 			.port_category ul li { float: left; margin: 0 20px; font-size: 18px; color: #666; cursor: pointer;}
 			.port_category ul li.active { font-weight: bold; color: #fb697a; padding: 0 3px 5px; border-bottom: 2px solid #fb697a;}
 			
-		#portfolio .port_list > li { float: left; width: 31.5%; margin: 0 10px 20px; box-sizing: border-box; border: 1px solid #ccc; box-sizing: border-box; overflow: hidden;}
-		#portfolio .port_list > li img { transform: scale(1.0); transition: transform 1s;}
-		#portfolio .port_list > li:hover img { transform: scale(1.2);}
-		#portfolio .port_list > .active a { color: #f91d37;}
+		/*#portfolio .port_list > li { float: left; width: 31.5%; margin: 0 10px 20px; box-sizing: border-box; border: 1px solid #ccc; box-sizing: border-box;}*/
+		#portfolio .port_list { column-count: 3; column-grp: 10px;}
+		#portfolio .port_list > li { display: inline-block; border: 1px solid #ccc; margin-bottom: 15px; overflow: hidden;}
+			#portfolio .port_list > li img { transform: scale(1.0); transition: transform 1s;}
+			#portfolio .port_list > li a { word-break: break-all;}
+			#portfolio .port_list > li:hover img { transform: scale(1.2);}
+			#portfolio .port_list > .active h4 { color: #f91d37;}
 		
-			#portfolio .port_list > li > ul { font-size: 14px; padding: 10px 15px 15px; min-height: 126px; box-sizing: border-box; background: #fff; position: relative; z-index: 10;}
+			#portfolio .port_list > li > ul { font-size: 14px; padding: 10px 15px 15px; box-sizing: border-box; background: #fff; position: relative; z-index: 10;}
 				#portfolio .port_list > li ul > li { padding-bottom: 5px;}
-				#portfolio .port_list > li ul > li h4 { font-size: 18px; padding-bottom: 10px;}
-
-@media screen and (max-width: 1152px) {
-	#portfolio .port_list > li { width: 31%;}
-	
-		#portfolio .port_list > li > ul { min-height: 151px;}
-}
-
-@media screen and (max-width: 894px) {
-	#portfolio .port_list > li { width: 46%; margin: 0 2% 20px;}
-}
-
-@media screen and (max-width: 538px) {
-	#portfolio .port_list > li { width: 100%; margin: 0 0 40px;}
+					#portfolio .port_list > li ul > li h4 { font-size: 18px; padding-bottom: 10px;}
+				
+@media screen and (max-width: 768px) {
+	#portfolio .port_list { column-count: 2;}
+}		
+		
+@media screen and (max-width: 590px) {
+	#portfolio .port_list { column-count: 1;}
+		#portfolio .port_list > li { width: 100%;}
+		
+			#portfolio .port_list > li a { color: #f91d37;}
 }
 
 
@@ -230,9 +231,13 @@ header:after { content: ""; display: block; clear: both;}
 			#career .career_icon span:nth-child(4) { top: 38%;}
 			#career .career_icon span:nth-child(5) { top: 56.5%;}
 			#career .career_icon span:nth-child(6) { top: 81%;}
+
+@media screen and (max-width: 1024px) {
+	#career div { max-width: 410px;}
+}
 		
 @media screen and (max-width: 768px) {
-	#career div { position: inherit; width: 95%; max-width: 93%; margin-bottom: 60px;}
+	#career div { position: inherit; max-width: 93%; margin-bottom: 60px;}
 	
 	#career .career_left { float: right; text-align: left;}
 	#career .career_right { float: right;}
@@ -252,15 +257,15 @@ header:after { content: ""; display: block; clear: both;}
 }
 
 @media screen and (max-width: 474px) {
-	#career div { width: 90%;}
-		#career .career_icon p { min-height: 1250px;}
+	#career div { width: 90%; margin-bottom: 30px;}
+		#career .career_icon p { min-height: 1100px; margin-top: -10px;}
 		#career p:last-child { min-height: 140px;}
 		
-		#career .career_icon span:nth-child(2) { top: 15%;}
-		#career .career_icon span:nth-child(3) { top: 32%;}
+		#career .career_icon span:nth-child(2) { top: 13.6%;}
+		#career .career_icon span:nth-child(3) { top: 31.4%;}
 		#career .career_icon span:nth-child(4) { top: 49%;}
-		#career .career_icon span:nth-child(5) { top: 66%;}
-		#career .career_icon span:nth-child(6) { top: 83.5%;}
+		#career .career_icon span:nth-child(5) { top: 66.7%;}
+		#career .career_icon span:nth-child(6) { top: 84.5%;}
 }
 
 

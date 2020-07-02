@@ -19,6 +19,10 @@ a:focus { text-decoration: none; color: #fa465c;}
 .title { color: #f91d37; font-size: 40px; margin: 100px 0 50px; text-align: center; text-transform: uppercase;}
 .color-white { color: #fff;}
 
+@media screen and (max-width: 474px) {
+	.title { font-size: 32px; margin: 80px 0 30px;}
+}
+
 /* 드래그 색상(IE, 크롬&사파리, 파이어폭스, 오페라)*/
 ::selection { background: #fa465c; color: #fff;}
 ::-webkit-selection { background: #fa465c; color: #fff;}
