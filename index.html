@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="ko">
 	<head>
-		<title>최윤 포트폴리오 페이지 이동</title>
+		<title>최윤 포트폴리오</title>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<!-- css -->
+		<link href="css/common.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 		
 		<!-- js -->
@@ -27,12 +29,12 @@
 				<li class="intro_right"><img src="images/intro_right.png" alt="인트로 오른쪽 상자"></li>
 			</ul>
 			
-			<h4>바로 여기 있어요!</h4>
-			
-			<p class="intro_click">
-				Click
+			<div class="intro_click">
+				<h4>바로 여기 있어요!</h4>
+				
+				Click<br>
 				<img src="images/intro_click.png" alt="이곳을 클릭해주세요">
-			</p>
+			</div>
 		</section> <!-- //intro -->
 	
 		<!-- header -->
@@ -40,7 +42,11 @@
 			<section class="wrap">
 				<h1><a href="#">CY.L</a></h1>
 				
-				<nav>
+				<nav class="mobile_menu">
+					<img src="images/menu_icon.png" alt="모바일 메뉴 아이콘">
+				</nav>
+				
+				<nav class="pc_menu">
 					<ul>
 						<li><a href="#">ABOUT ME</a></li>
 						<li><a href="#">SKILL</a></li>

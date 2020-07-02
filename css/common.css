@@ -1,0 +1,24 @@
+@charset "utf-8";
+* { margin: 0; padding: 0; font-family: "맑은 고딕"; word-break: keep-all;}
+
+html, body { height: 100%;}
+
+ul, li { list-style: none}
+
+a { text-decoration: none; color: #333;}
+a:hover { text-decoration: none; color: #333;}
+a:focus { text-decoration: none; color: #fa465c;}
+
+.img-responsive { width: 100%;}
+
+.wrap { max-width: 1200px; margin: auto; padding: 0 10px; color: #333;}
+
+/* 메뉴 제목 */
+.title { color: #f91d37; font-size: 40px; margin: 100px 0 50px; text-align: center; text-transform: uppercase;}
+.color-white { color: #fff;}
+
+/* 드래그 색상(IE, 크롬&사파리, 파이어폭스, 오페라)*/
+::selection { background: #fa465c; color: #fff;}
+::-webkit-selection { background: #fa465c; color: #fff;}
+::-moz-selection { background: #fa465c; color: #fff;}
+::-o-selection { background: #fa465c; color: #fff;}
