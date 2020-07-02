@@ -28,3 +28,9 @@ a:focus { text-decoration: none; color: #fa465c;}
 ::-webkit-selection { background: #fa465c; color: #fff;}
 ::-moz-selection { background: #fa465c; color: #fff;}
 ::-o-selection { background: #fa465c; color: #fff;}
+
+
+/* 버튼 디자인 */
+.button_while { background: #fff; border: 1px solid #f91d37; color: #f91d37; padding: 10px 28px 12px; font-size: 14px; font-weight: bold; cursor: pointer;}
+
+.button_color { background: #f91d37; border: none; color: #fff; padding: 10px 28px 12px; font-size: 14px; font-weight: bold; cursor: pointer;}
