@@ -207,8 +207,8 @@ header.float { position: fixed; top: 0; width: 100%; background: #fff; z-index: 
 #career:after { content: ""; display: block; clear: both;}
 
 	#career div { max-width: 452px; position: absolute;}
-		#career .career_left { right: 54%; text-align: right;}
-		#career .career_right { left: 56%;}
+		#career .career_left { right: 52%; text-align: right;}
+		#career .career_right { left: 54%;}
 		
 		#career div:nth-child(2) { top: 17%;}
 		#career div:nth-child(3) { top: 31%;}
