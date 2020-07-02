@@ -134,12 +134,6 @@ header.float { position: fixed; top: 0; width: 100%; background: #fff; z-index: 
 	#skill ul li span { font-size: 17px; color: #f91d37;}
 	
 	#skill ul li .stick { display: inline-block; margin: 0 10px 0 30px; height: 15px; background: #f91d37;}
-	#skill ul li:nth-child(1) .stick { width: 75%;}
-	#skill ul li:nth-child(2) .stick { width: 65%;}
-	#skill ul li:nth-child(3) .stick { width: 70%;}
-	#skill ul li:nth-child(4) .stick { width: 60%;}
-	#skill ul li:nth-child(5) .stick { width: 75%;}
-	#skill ul li:nth-child(6) .stick { width: 70%;}
 
 @media screen and (max-width: 954px) {
 	#skill ul li p { width: 110px;}
@@ -151,21 +145,6 @@ header.float { position: fixed; top: 0; width: 100%; background: #fff; z-index: 
 	#skill ul li p { width: 100%; text-align: left; padding-left: 10px;}
 	
 	#skill ul li .stick { margin: 0 10px;}
-	#skill ul li:nth-child(1) .stick { width: 85%;}
-	#skill ul li:nth-child(2) .stick { width: 75%;}
-	#skill ul li:nth-child(3) .stick { width: 80%;}
-	#skill ul li:nth-child(4) .stick { width: 70%;}
-	#skill ul li:nth-child(5) .stick { width: 85%;}
-	#skill ul li:nth-child(6) .stick { width: 80%;}
-}
-
-@media screen and (max-width: 418px) {
-	#skill ul li:nth-child(1) .stick { width: 75%;}
-	#skill ul li:nth-child(2) .stick { width: 65%;}
-	#skill ul li:nth-child(3) .stick { width: 70%;}
-	#skill ul li:nth-child(4) .stick { width: 60%;}
-	#skill ul li:nth-child(5) .stick { width: 75%;}
-	#skill ul li:nth-child(6) .stick { width: 70%;}
 }
 
 
