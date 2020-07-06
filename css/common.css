@@ -1,4 +1,10 @@
 @charset "utf-8";
+
+/* font */
+@font-face { font-family: 'NanumSquareRound'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff'); font-weight: normal; font-style: normal; }
+@import url(//fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+
+
 * { margin: 0; padding: 0; font-family: "맑은 고딕"; word-break: keep-all;}
 
 html, body { height: 100%;}
