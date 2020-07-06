@@ -1,11 +1,21 @@
 $(function() {	
-	//로딩 이미지 세로위치
+	//스크롤 막기
+	$("#loading").on('scroll touchmove mousewheel', function(event) {
+	  event.preventDefault();
+	  event.stopPropagation();
+	  return false;
+	});
+	
+	//로딩 이미지
 	var loading = $("#loading").height() * 0.4;	
 	$("#loading > img").css("margin-top", loading + "px");
 	
 	setTimeout(function() {
-		$("#loading").css("display", "none");
-	}, 1900);
+		//스크롤 막기 해제
+		$("#loading").off('scroll touchmove mousewheel');
+		
+		$("#loading").css("display", "none");		
+	}, 1800);
 	
 
 	//인트로 타이틀 위치값
@@ -34,8 +44,7 @@ $(function() {
 			});
 		});
 	}, 2000);
-	
-	
+		
 	
 	//메뉴 상단 고정
 	var menu = $("header").offset();
@@ -47,7 +56,9 @@ $(function() {
 		}else {
 			$("header").removeClass("float");
 		}
-
+		
+		//console.log($(document).scrollTop())
+		
 		//skill 애니메이션
 		if($(document).scrollTop() > (skill.top - 700)) {
 			$("#skill ul li:nth-child(1) .stick").animate({width : "75%"}, 1000)
