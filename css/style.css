@@ -2,9 +2,9 @@
 /* intro */
 #intro { background: url('../images/intro_back.png') no-repeat; background-size: 100% 100%; height: 100%; color: #fff; text-align: center; overflow: hidden;}
 	
-	#intro > h2 { position: relative; width: 100%; top: 36%; margin: auto; font-size: 46px; font-family: "나눔스퀘어라운드"; letter-spacing: 2px;}
+	#intro > h2 { position: relative; width: 100%; top: 36%; margin: auto; font-size: 46px; font-family: 'NanumSquareRound'; letter-spacing: 2px;}
 	
-	#intro > ul { position: relative; width: 100%; max-width: 700px; top: 35%; margin: auto; font-size: 22px; font-family: "나눔스퀘어라운드";}
+	#intro > ul { position: relative; width: 100%; max-width: 700px; top: 35%; margin: auto; font-size: 22px; font-family: 'NanumSquareRound';}
 		#intro > ul li { margin-bottom: 18px; opacity: 0;}
 
 		.intro_left, .intro_right { position: absolute; top: -7%;}
@@ -12,7 +12,7 @@
 		.intro_right { right: 45%;}
 		
 	.intro_click { position: relative; width: 160px; top: 44%; margin: auto; font-size: 13px; cursor: pointer; opacity: 0;}
-		.intro_click h4 { font-family: "나눔손글씨 펜"; font-size: 34px; font-weight: normal;}
+		.intro_click h4 { font-family: 'Nanum Pen Script', cursive; font-size: 34px; font-weight: normal;}
 		.intro_click img { -webkit-animation: img 1.0s linear infinite;}
 		
 		/* 아이콘 애니메이션(IE, 크롬&사파리, 파이어폭스, 오페라) */
@@ -301,13 +301,15 @@ header.float { position: fixed; top: 0; width: 100%; background: #fff; z-index: 
 /* footer */
 footer { background: #333; text-align: center; overflow: hidden;}
 footer:after { content: ""; display: block; clear: both;}
-	footer h2 { font-size: 32px; color: #8d8d8d; margin: 50px 0 20px;}
+	footer h2 { font-size: 32px; color: #8d8d8d; margin: 40px 0 20px;}
 	
 	.f_menu { max-width: 590px; margin: auto; font-size: 14px;}
 	.f_menu:after { content: ""; display: block; clear: both;}
 		.f_menu li { float: left; padding: 0 30px; color: #999; cursor: pointer;}
 	
-	footer p { clear: left; width: 100%; padding: 10px 0; margin-top: 40px; background: #222; color: #fff; font-size: 12px;}
+	.font_license { padding-top: 15px; color: #777; font-size: 13px;}
+	
+	footer > p { clear: left; width: 100%; padding: 14px 0; margin-top: 30px; background: #222; color: #fff; font-size: 12px;}
 	
 @media screen and (max-width: 768px) {
 	.f_menu { max-width: 440px;}
@@ -319,7 +321,7 @@ footer:after { content: ""; display: block; clear: both;}
 	
 	.f_menu li { width: 33%; padding: 0 15px 25px;}
 		
-	footer p { margin-top: 20px;}
+	footer > p { margin-top: 20px;}
 }
 
 @media screen and (max-width: 330px) {
