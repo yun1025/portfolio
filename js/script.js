@@ -1,4 +1,13 @@
 $(function() {	
+	//로딩 이미지 세로위치
+	var loading = $("#loading").height() * 0.4;	
+	$("#loading > img").css("margin-top", loading + "px");
+	
+	setTimeout(function() {
+		$("#loading").css("display", "none");
+	}, 1900);
+	
+
 	//인트로 타이틀 위치값
 	var intro_title = 0;
 	
@@ -9,20 +18,23 @@ $(function() {
 	)
 	
 	//인트로 애니메이션
-	$("#intro > h2").animate({"top" : intro_title + "px"}, 600, function() {
-		$("#intro .intro_left, #intro .intro_right").animate({"opacity" : "1"}, 400, function() {
-			$("#intro .intro_left").animate({"left" : "0"}, 500);
-			$("#intro .intro_right").animate({"right" : "0"}, 500, function() {
-				$("#intro > ul li:nth-child(1)").animate({"opacity" : "1"}, 400);
-				$("#intro > ul li:nth-child(2)").animate({"opacity" : "1"}, 1200);
-				$("#intro > ul li:nth-child(3)").animate({"opacity" : "1"}, 1800);
-				$("#intro > ul li:nth-child(4)").animate({"opacity" : "1"}, 2400);
-				$("#intro > ul li:nth-child(5)").animate({"opacity" : "1"}, 3000, function() {
-					$(".intro_click").animate({"opacity" : "1"}, 400);
+	setTimeout(function() {
+		$("#intro > h2").animate({"top" : intro_title + "px"}, 600, function() {
+			$("#intro .intro_left, #intro .intro_right").animate({"opacity" : "1"}, 400, function() {
+				$("#intro .intro_left").animate({"left" : "0"}, 500);
+				$("#intro .intro_right").animate({"right" : "0"}, 500, function() {
+					$("#intro > ul li:nth-child(1)").animate({"opacity" : "1"}, 400);
+					$("#intro > ul li:nth-child(2)").animate({"opacity" : "1"}, 1200);
+					$("#intro > ul li:nth-child(3)").animate({"opacity" : "1"}, 1800);
+					$("#intro > ul li:nth-child(4)").animate({"opacity" : "1"}, 2400);
+					$("#intro > ul li:nth-child(5)").animate({"opacity" : "1"}, 3000, function() {
+						$(".intro_click").animate({"opacity" : "1"}, 400);
+					});
 				});
 			});
 		});
-	});
+	}, 2000);
+	
 	
 	
 	//메뉴 상단 고정
@@ -74,6 +86,10 @@ $(function() {
 		}else (									//모바일
 			$("#intro > h2").css("top", $(window).width() * 0.25)
 		)
+		
+		//로딩 이미지 세로위치
+		loading = $(window).height() * 0.4;
+		$("#loading > img").css("margin-top", loading + "px");
 	});
 });
 
