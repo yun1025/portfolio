@@ -1,9 +1,10 @@
 @charset "utf-8";
 
 /* font */
+/* 나눔고딕 */
 @font-face { font-family: 'NanumSquareRound'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff'); font-weight: normal; font-style: normal; }
-@import url(//fonts.googleapis.com/earlyaccess/nanumpenscript.css);
-
+/* 나눔손글씨 펜 */
+@font-face{font-family:np;font-style:normal;font-weight:normal;src:local('Nanum Pen Script'),local('나눔손글씨 펜'),url(addons/webfont/font/np.woff)format('woff')}
 
 * { margin: 0; padding: 0; font-family: "맑은 고딕"; word-break: keep-all;}
 

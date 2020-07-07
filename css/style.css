@@ -18,7 +18,7 @@
 		.intro_right { right: 45%;}
 		
 	.intro_click { position: relative; width: 160px; top: 44%; margin: auto; font-size: 13px; cursor: pointer; opacity: 0; z-index: 5;}
-		.intro_click h4 { font-family: 'Nanum Pen Script'; font-size: 34px; font-weight: normal;}
+		.intro_click h4 { font-family: 'Nanum Pen Script', cursive; font-size: 34px; font-weight: normal;}
 		.intro_click img { animation: img 1.0s linear infinite; -webkit-animation: img 1.0s linear infinite;}
 		
 		/* 아이콘 애니메이션(IE, 크롬&사파리, 파이어폭스, 오페라) */
@@ -73,7 +73,7 @@
 		#intro > ul li { margin-bottom: 18px;}
 		
 		.intro_click { top: 18%;}
-			.intro_click h4 { font-size: 28px;}
+			.intro_click h4 { font-size: 18px;}
 }
 
 
@@ -325,7 +325,8 @@ footer:after { content: ""; display: block; clear: both;}
 @media screen and (max-width: 500px) {
 	footer h2 { margin: 40px 0 30px;}
 	
-	.f_menu li { width: 33%; padding: 0 15px 25px;}
+	.f_menu { max-width: 70%;}
+		.f_menu li { width: 48%; padding: 0 15px 25px; box-sizing: border-box;}
 		
 	footer > p { margin-top: 20px;}
 }
