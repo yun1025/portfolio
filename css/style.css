@@ -4,11 +4,11 @@
 
 
 /* intro */
-#intro { position: relative; background: url('../images/intro_back.gif') no-repeat; background-size: 100% 100%; height: 100%; color: #fff; text-align: center; overflow: hidden; z-index: -2;}
+#intro { position: relative; background: url('../images/intro_back.gif') no-repeat; background-size: 100% 100%; height: 100%; color: #fff; text-align: center; overflow: hidden;}
 	
-	#intro > .back  { position: absolute; top: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.4); z-index: -1;}
+	#intro > .back  { position: absolute; top: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.4); z-index: 0;}
 	
-	#intro > h2 { position: relative; width: 100%; top: 36%; margin: auto; font-size: 46px; font-family: 'NanumSquareRound'; letter-spacing: 2px;}
+	#intro > h2 { position: relative; width: 100%; top: 36%; margin: auto; font-size: 46px; font-family: 'NanumSquareRound'; letter-spacing: 2px; z-index: 5;}
 	
 	#intro > ul { position: relative; width: 100%; max-width: 700px; top: 35%; margin: auto; font-size: 22px; font-family: 'NanumSquareRound';}
 		#intro > ul li { margin-bottom: 18px; opacity: 0;}
@@ -17,7 +17,7 @@
 		.intro_left { left: 45%;}
 		.intro_right { right: 45%;}
 		
-	.intro_click { position: relative; width: 160px; top: 44%; margin: auto; font-size: 13px; cursor: pointer; opacity: 0;}
+	.intro_click { position: relative; width: 160px; top: 44%; margin: auto; font-size: 13px; cursor: pointer; opacity: 0; z-index: 5;}
 		.intro_click h4 { font-family: 'Nanum Pen Script', cursive; font-size: 34px; font-weight: normal;}
 		.intro_click img { animation: img 1.0s linear infinite; -webkit-animation: img 1.0s linear infinite;}
 		
