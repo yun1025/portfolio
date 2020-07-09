@@ -57,8 +57,6 @@ $(function() {
 			$("header").removeClass("float");
 		}
 		
-		//console.log($(document).scrollTop())
-		
 		//skill 애니메이션
 		if($(document).scrollTop() > (skill.top - 700)) {
 			$("#skill ul li:nth-child(1) .stick").animate({width : "75%"}, 1000)
@@ -82,14 +80,19 @@ $(function() {
 		$(this).addClass("active");
 	});
 	
+	//포트폴리오 디자인 시안 닫기
+	$(".modal_img p").click(function() {
+		$("#modal").hide();
+	})
+	
 	//반응형
 	$(window).resize(function() {
 		//메뉴 슬라이드
 		if($(window).width() > 751) {		//모바일 이상
 			$(".pc_menu").removeClass("on").show();
-		}else (								//모바일
-			$(".pc_menu").removeClass("on").hide()
-		)
+		}else {								//모바일
+			$(".pc_menu").removeClass("on").hide();
+		}
 		
 		//인트로 타이틀 위치값
 		if($(window).width() > 550) {			//모바일 이상
@@ -133,4 +136,15 @@ function portfolio(type) {
 	}else {
 		$(".port_list > li").fadeIn('slow');		 
 	}
+}
+
+//포트폴리오 디자인 시안 보기
+function port_view(url) {
+	$(".modal_img div").html("<img src='images/view_"+ url +"' alt='디자인 시안' oncontextmenu='return false' style='-webkit-touch-callout:none'>");
+	$("#modal").show();
+	
+	//PC - 마우스 우클릭 막기
+	$(".modal_img div").on("contextmenu",function(e){
+		return false;
+	});
 }
